@@ -31,9 +31,9 @@ RUN pip3 install -r /tmp/requirements.txt
 
 COPY deployment/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 RUN mkdir -p /opt/wwc
-ADD . /opt/wwc/apartment-finder
+ADD . /opt/wwc/craigslist-alert
 
 RUN mkdir -p /opt/wwc/logs
-WORKDIR /opt/wwc/apartment-finder
+WORKDIR /opt/wwc/craigslist-alert
 
 CMD ["/usr/bin/supervisord"]

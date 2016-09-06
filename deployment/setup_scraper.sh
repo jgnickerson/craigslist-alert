@@ -1,6 +1,6 @@
 #! /bin/bash
 
-cd ~/apartment-finder
+cd ~/craigslist-alert
 
 sudo apt-get update
 sudo apt-get install python3-pip -y
