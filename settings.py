@@ -21,8 +21,15 @@ AREAS = ["sfc"]
 #CRAIGSLIST_HOUSING_SECTION = 'zip'
 
 FURNITURE_QUERIES = [
-    {"section": "zip", "query":"desk", "slack_channel":"desk-free", "min_price": None, "max_price": None},
-    {"section": "fua", "query":"desk*", "slack_channel":"desk-forsale", "min_price": None, "max_price": 100}
+    {"section": "zip", "query":"desk*", "slack_channel":"desks", "min_price": None, "max_price": None},
+    {"section": "fua", "query":"desk*", "slack_channel":"desks", "min_price": None, "max_price": 100},
+    {"section": "zip", "query":"dresser", "slack_channel":"dressers", "min_price": None, "max_price": None},
+    {"section": "fua", "query":"dresser", "slack_channel":"dressers", "min_price": None, "max_price": 100},
+    {"section": "zip", "query":"shel*", "slack_channel":"shelves", "min_price": None, "max_price": None},
+    {"section": "fua", "query":"shel*", "slack_channel":"shelves", "min_price": None, "max_price": 40},
+    {"section": "zip", "query":"bookcase", "slack_channel":"bookcases", "min_price": None, "max_price": None},
+    {"section": "fua", "query":"bookcase", "slack_channel":"bookcases", "min_price": None, "max_price": 50},
+    {"section": "zip", "query":"nightstand", "slack_channel":"nightstands", "min_price": None, "max_price": None},
 ]
 
 ## System settings
@@ -32,8 +39,6 @@ FURNITURE_QUERIES = [
 # Too slow may miss listings.
 SLEEP_INTERVAL = 5 * 60 # 5 minutes
 
-# Which slack channel to post the listings into.
-SLACK_CHANNEL = "#furnituretest"
 
 # The token that allows us to connect to slack.
 # Should be put in private.py, or set as an environment variable.

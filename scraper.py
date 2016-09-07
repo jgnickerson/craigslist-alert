@@ -133,11 +133,7 @@ def do_scrape():
         results = scrape_area(query)
         for result in results:
             post_listing_to_slack(sc, result, query["slack_channel"])
-            print(result)
-        print("------------------")
-        print("------------------")
-        print("------------------")
-        print("------------------")
+        time.sleep(10)
 
 
     # for area in settings.AREAS:
